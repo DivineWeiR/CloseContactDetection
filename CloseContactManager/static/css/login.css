@@ -1,0 +1,167 @@
+body {
+    background-color: #eee;
+}
+
+.register-hint {
+    font-size: 0.8em;
+    padding: 0;
+    color: #aeaeae;
+}
+
+.login-container {
+    background: #FFFFFF;
+    /*width: 20%;*/
+    /*height: 400px;*/
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 50px 50px;
+    box-shadow: 2px 2px 2px #888888;
+}
+
+.login-icon {
+    margin: auto;
+    margin-top: 10%;
+}
+
+.login-container form .input-box {
+    margin: auto;
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+    width: 80%;
+}
+
+.login-container h2 {
+    color: #3edc85;
+    font-weight: bold;
+}
+
+.login-container form .input-box i {
+    color: #555555;
+    line-height: 1.5;
+    height: 1.2em;
+    margin-top: 10px;
+}
+
+.login-container form .input-box input {
+    height: 1.5em;
+    border: 0;
+    border-radius: 0;
+    width: 90%;
+    color: #555555;
+    background: #FFFFFF00;
+    border-bottom: 1px solid #999999;
+    margin-left: 10px;
+    padding: 5px 10px;
+    margin-top: 10px;
+
+}
+
+.login-container form .input-box input::-webkit-input-placeholder {
+    color: #55555590;
+}
+
+.login-container form .input-box input::-moz-placeholder {
+    color: #55555590;
+}
+
+.login-container form .input-box input:-moz-placeholder {
+    color: #55555590;
+}
+
+.login-container form .input-box input:-ms-input-placeholder {
+    color: #55555590;
+}
+
+.login-container form button {
+    margin-top: 30px;
+    width: 40%;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    color: #FFFFFF;
+    background-image: linear-gradient(to right, #43e97b 0%, #3edc85 100%);
+
+}
+
+.sign-up {
+    margin: 10px;
+}
+
+.login-container form a {
+
+    color: #3edc85;
+}
+
+.login-container form a:hover {
+    margin-top: 40px;
+    color: #555555;
+}
+
+.download-panel {
+    margin-top: 15px;
+}
+
+.bubble {
+    background: #FFFFFF;
+    margin: auto;
+    margin-top: 15px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #888888;
+}
+
+/*.bubble i {*/
+/*position: absolute;*/
+/*border-width: 0;*/
+/*border-style: solid;*/
+/*border-color: transparent;*/
+/*}*/
+
+.bubble .talk {
+    padding: 20px;
+    color: #333;
+}
+
+.bubble:before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    right: 50%;
+    width: 0;
+    height: 0;
+    border-width: 23px;
+    border-style: solid;
+    border-color: transparent;
+    border-bottom-width: 16px;
+    border-bottom-color: currentColor;
+    color: #dddddd;
+}
+
+.bubble .talk img {
+    width: 80%;
+    height: auto;
+}
+
+.qrcode-hint {
+    margin-top: 5px;
+    color: #2e3133;
+}
+
+.download-marker h5 {
+    font-weight: bold;
+    text-align: left;
+    margin-left: -10px;
+}
+
+.download-marker p {
+    margin-top: 10px;
+    text-align: left;
+}
+
+.download-marker p > a {
+    text-decoration: underline;
+}

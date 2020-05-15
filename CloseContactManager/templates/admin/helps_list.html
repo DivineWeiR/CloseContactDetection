@@ -1,0 +1,102 @@
+{% extends 'admin/base_url.html' %}
+{% load static %}
+{# 页面内容 #}
+{% block content %}
+    <!-- Orders -->
+    <div class="orders">
+        <div class="row equal-height-container">
+            <div class="col-xl-12" id="help-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="box-title inline-block">查看个人求助 </h4>
+                        <div id="message-box" class="pull-right inline-block">
+                            {% if message %}
+                                {% ifequal message_type 1 %}
+                                    <h4 class="box-title inline-block fg-color-4">{{ message }}</h4>
+                                {% endifequal %}
+                                {% ifequal message_type 0 %}
+                                    <h4 class="box-title inline-block fg-color-0">{{ message }}</h4>
+                                {% endifequal %}
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="card-body--">
+                        <div class="table-stats order-table ov-h">
+                            <table class="table ">
+                                <thead class="text-left">
+                                <tr>
+                                    <th class="serial">#</th>
+                                    <th>身份证号</th>
+                                    <th>姓名</th>
+                                    <th>性别</th>
+                                    <th>联系方式</th>
+                                    <th>住址</th>
+                                    <th>操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                {% for help in helps %}
+                                    <tr>
+                                        <td class="serial">{{ help.id }}</td>
+                                        <td>{{ help.id_number }}</td>
+                                        <td><span class="name">{{ help.name }}</span></td>
+                                        <td><span class="sex">{{ help.gender }}</span></td>
+                                        <td><span class="telephone">{{ help.phone_number }}</span></td>
+                                        <td class="help-address"><span>{{ help.address }}</span></td>
+                                        <td>
+                                            {% ifequal help.processed '1' %}
+                                                <a class="checked" disabled="true"><i
+                                                        class="fa fa-minus"></i></a>
+                                            {% else %}
+                                                <a href="/admin/check_help_and_report?item_id={{ help.id }}&item_type={{ help.info_type }}"
+                                                   class="unchecked"><i
+                                                        class="fa fa-check"></i></a>
+                                            {% endifequal %}
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                                </tbody>
+                            </table>
+                        </div> <!-- /.table-stats -->
+                    </div>
+                    <div class="card-body">
+                        <div class="card-body">
+                            <ul class="pager pull-right">
+                                <li class="pager-left" id="prev-page"><a
+                                        href="/admin/helps_list?page={{ page|add:-1 }}"><i
+                                        class="fa fa-arrow-circle-o-left"></i>&nbsp;上一页</a></li>
+                                <li class="pager-left" id="next-page"><a
+                                        href="/admin/helps_list?page={{ page|add:1 }}">下一页&nbsp;<i
+                                        class="fa fa-arrow-circle-o-right"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> <!-- /.card -->
+            </div>  <!-- /.col-lg-12 -->
+        </div>
+    </div>
+    <!-- /.orders -->
+
+
+    <!-- Scripts -->
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="{% static '/js/main.js' %}"></script>
+
+    <!--Local Stuff-->
+    <script>
+
+        var $ = window.jQuery;
+        setTimeout(function () {
+            $("#message-box").fadeOut(1000)
+        }, 2000);
+
+        var prev_enable = {{ prev_enable|safe }};
+        var next_enable = {{ next_enable|safe }};
+        if (prev_enable === 0)
+            $('#prev-page').addClass("disabled");
+        if (next_enable === 0)
+            $('#next-page').addClass("disabled");
+        $("#helps-list").addClass("active");
+    </script>
+{% endblock %}

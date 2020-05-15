@@ -1,0 +1,1081 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6966640a-0d02-41f0-8fc2-c8919bc47490" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/CloseContactManager$test.coverage" NAME="test Coverage Results" MODIFIED="1586191992858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CloseContactManager/Tools" />
+    <SUITE FILE_PATH="coverage/CloseContactManager$database_operater.coverage" NAME="database_operater Coverage Results" MODIFIED="1587060553251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CloseContactManager/Tools" />
+    <SUITE FILE_PATH="coverage/CloseContactManager$test__1_.coverage" NAME="test (1) Coverage Results" MODIFIED="1586196729831" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="W:/文档/python" />
+    <SUITE FILE_PATH="coverage/CloseContactManager$daily_analyse.coverage" NAME="daily_analyse Coverage Results" MODIFIED="1587738092022" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CloseContactManager/Tools" />
+    <SUITE FILE_PATH="coverage/CloseContactManager$toolbox.coverage" NAME="toolbox Coverage Results" MODIFIED="1584093075506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CloseContactManager/Tools" />
+    <SUITE FILE_PATH="coverage/CloseContactManager$dabase_operater.coverage" NAME="dabase_operater Coverage Results" MODIFIED="1583169957999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CloseContactManager/Tools" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@aliyun" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@aliyun" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="view.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CloseContactManager/view.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="616" column="33" lean-forward="true" selection-start-line="616" selection-start-column="33" selection-end-line="616" selection-end-column="33" />
+              <folding>
+                <element signature="e#0#59#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="434">
+              <caret line="88" column="1" lean-forward="true" selection-start-line="88" selection-start-column="1" selection-end-line="88" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/search.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="close_contacts_list.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/admin/close_contacts_list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="377">
+              <caret line="47" column="21" lean-forward="true" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vmap.sampledata.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/vmap.sampledata.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="myECharts.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/myECharts.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="init_date.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/init_date.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/admin/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1843">
+              <caret line="97" column="5" lean-forward="false" selection-start-line="87" selection-start-column="4" selection-end-line="97" selection-end-column="5" />
+              <folding>
+                <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#2545#2551#0#HTML" expanded="true" />
+                <element signature="e#2551#2557#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/admin/register.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1938">
+              <caret line="102" column="5" lean-forward="false" selection-start-line="102" selection-start-column="5" selection-end-line="102" selection-end-column="5" />
+              <folding>
+                <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#2994#3000#0#HTML" expanded="true" />
+                <element signature="e#3000#3006#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/css/login.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2337">
+              <caret line="123" column="15" lean-forward="false" selection-start-line="123" selection-start-column="15" selection-end-line="123" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="Python Script" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ta-address</find>
+      <find>html</find>
+      <find>site-foote</find>
+      <find>right-panel</find>
+      <find>body</find>
+      <find>site-</find>
+      <find>}}</find>
+      <find>.value</find>
+      <find>&quot;,&quot;</find>
+      <find>map</find>
+      <find>&amp; &amp;</find>
+      <find>showModifyBlock</find>
+      <find>modi</find>
+      <find>clear</find>
+      <find>date</find>
+      <find>update_date</find>
+      <find>add_user</find>
+      <find>add_</find>
+      <find>check_user</find>
+      <find>Process(target=</find>
+      <find>btn-tr</find>
+      <find>insert successfully</find>
+      <find>check_us</find>
+      <find>village_select</find>
+      <find>track</find>
+      <find>30602</find>
+      <find>Request Params Not Valid, parameter msg not support</find>
+      <find>dele</find>
+      <find>Request Params Not Valid, parameter</find>
+      <find>Request Params Not Valid</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>gender</replace>
+      <replace>datestr2timestamp</replace>
+      <replace>].decode('utf-8')</replace>
+      <replace>users_info</replace>
+      <replace>users_info_old</replace>
+      <replace>database_host</replace>
+      <replace>'%s'</replace>
+      <replace>%d</replace>
+      <replace>single</replace>
+      <replace>raw_data</replace>
+      <replace>new_data.append(new_raw_data['</replace>
+      <replace>counts</replace>
+      <replace>where_clause</replace>
+      <replace>level2</replace>
+      <replace>pager</replace>
+      <replace>tbody</replace>
+      <replace>sql</replace>
+      <replace>new</replace>
+      <replace>fa fa-users fa-3x</replace>
+      <replace>2</replace>
+      <replace>close</replace>
+      <replace>form-control form-control-sm</replace>
+      <replace />
+      <replace>+&quot;</replace>
+      <replace>.val()</replace>
+      <replace>&quot;\&quot;,\&quot;&quot;</replace>
+      <replace>search_map</replace>
+      <replace>and</replace>
+      <replace>update_time</replace>
+      <replace>village-select</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/static/css/lib/admin_page.css" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/static/css/admin_page.css" />
+        <option value="$PROJECT_DIR$/CloseContactManager/Tools/dabase_operater.py" />
+        <option value="$PROJECT_DIR$/CloseContactManager/Tools/transfromer.py" />
+        <option value="$PROJECT_DIR$/CloseContactManager/Tools/transformer.py" />
+        <option value="$PROJECT_DIR$/static/js/jquery.js" />
+        <option value="$PROJECT_DIR$/static/css/iconfont.css" />
+        <option value="$PROJECT_DIR$/static/css/iconfont/iconfont.css" />
+        <option value="$PROJECT_DIR$/CloseContactManager/settings.py" />
+        <option value="$PROJECT_DIR$/templates/admin/sign_up.html" />
+        <option value="$PROJECT_DIR$/templates/admin/sign_in.html" />
+        <option value="$PROJECT_DIR$/CloseContactManager/Tools/test.py" />
+        <option value="W:/文档/python/test.py" />
+        <option value="$PROJECT_DIR$/templates/admin/helps_and_reports_list.html" />
+        <option value="$PROJECT_DIR$/templates/admin/all_list_new.html" />
+        <option value="$PROJECT_DIR$/templates/admin/all_list.html" />
+        <option value="$PROJECT_DIR$/templates/admin/close_contacts_list.html" />
+        <option value="$PROJECT_DIR$/templates/admin/patients_list.html" />
+        <option value="$PROJECT_DIR$/templates/admin/reports_list.html" />
+        <option value="$PROJECT_DIR$/static/js/myECharts.js" />
+        <option value="$PROJECT_DIR$/templates/admin/helps_list.html" />
+        <option value="$PROJECT_DIR$/static/css/menu-iconfont/iconfont.css" />
+        <option value="$PROJECT_DIR$/templates/admin/admin_home.html" />
+        <option value="$PROJECT_DIR$/templates/admin/track_search.html" />
+        <option value="$PROJECT_DIR$/static/css/jquery.datetimepicker.min.css" />
+        <option value="$PROJECT_DIR$/static/js/jquery.datetimepicker.min.js" />
+        <option value="$PROJECT_DIR$/static/js/jquery.datetimepicker.js" />
+        <option value="$PROJECT_DIR$/static/js/init_date.js" />
+        <option value="$PROJECT_DIR$/static/css/jquery.datetimepicker.css" />
+        <option value="$PROJECT_DIR$/templates/admin/base_url.html" />
+        <option value="$PROJECT_DIR$/static/css/style.css" />
+        <option value="$PROJECT_DIR$/static/js/my_bmap.js" />
+        <option value="$PROJECT_DIR$/static/js/add_track.js" />
+        <option value="$PROJECT_DIR$/CloseContactManager/Tools/database_config.py" />
+        <option value="$PROJECT_DIR$/static/css/admin-page.css" />
+        <option value="$PROJECT_DIR$/templates/admin/personal_page_add.html" />
+        <option value="$PROJECT_DIR$/CloseContactManager/Tools/database_operater.py" />
+        <option value="$PROJECT_DIR$/CloseContactManager/Tools/push_message_channel.py" />
+        <option value="$PROJECT_DIR$/CloseContactManager/Tools/toolbox.py" />
+        <option value="$PROJECT_DIR$/CloseContactManager/Tools/daily_analyse.py" />
+        <option value="$PROJECT_DIR$/templates/admin/personal_page.html" />
+        <option value="$PROJECT_DIR$/CloseContactManager/urls.py" />
+        <option value="$PROJECT_DIR$/CloseContactManager/view.py" />
+        <option value="$PROJECT_DIR$/templates/admin/login.html" />
+        <option value="$PROJECT_DIR$/static/css/login.css" />
+        <option value="$PROJECT_DIR$/templates/admin/register.html" />
+        <option value="$PROJECT_DIR$/static/js/search_modify.js" />
+        <option value="$PROJECT_DIR$/static/js/search.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="953" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Assignment issuesJavaScript</id>
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>CoffeeScript</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>GeneralCoffeeScript</id>
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsJavaScript</id>
+          </State>
+          <State>
+            <id>Probable bugsCSS</id>
+          </State>
+          <State>
+            <id>Python</id>
+          </State>
+          <State>
+            <id>SQL</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="CloseContactManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CloseContactManager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CloseContactManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CloseContactManager" type="462c0819:PsiDirectoryNode" />
+              <item name="CloseContactManager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CloseContactManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CloseContactManager" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CloseContactManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CloseContactManager" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CloseContactManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CloseContactManager" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CloseContactManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CloseContactManager" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CloseContactManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CloseContactManager" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CloseContactManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="CloseContactManager" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 (WebEvaluation) (2) &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="W:\CloseContactManager\static\img" />
+      <recent name="W:\CloseContactManager\download_files" />
+      <recent name="W:\CloseContactManager\CloseContactManager" />
+      <recent name="W:\CloseContactManager\static\js" />
+      <recent name="W:\CloseContactManager\static\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="W:\CloseContactManager\static" />
+      <recent name="W:\CloseContactManager\static\css" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Django server.CloseContactManager">
+    <configuration name="daily_analyse" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CloseContactManager/Tools" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CloseContactManager" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CloseContactManager/Tools/daily_analyse.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="database_operater" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CloseContactManager/Tools" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CloseContactManager" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CloseContactManager/Tools/database_operater.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="test (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../文档/python" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CloseContactManager" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../文档/python/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CloseContactManager/Tools" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CloseContactManager" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CloseContactManager/Tools/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="toolbox" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CloseContactManager/Tools" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CloseContactManager" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CloseContactManager/Tools/toolbox.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="CloseContactManager" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="CloseContactManager.settings" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\weira\Anaconda3\envs\tensorflow\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CloseContactManager" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8008" />
+      <option name="host" value="192.168.1.105" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+    </configuration>
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="Django server.CloseContactManager" />
+      <item index="1" class="java.lang.String" itemvalue="Python.database_operater" />
+      <item index="2" class="java.lang.String" itemvalue="Python.toolbox" />
+      <item index="3" class="java.lang.String" itemvalue="Python.test" />
+      <item index="4" class="java.lang.String" itemvalue="Python.test (1)" />
+      <item index="5" class="java.lang.String" itemvalue="Python.daily_analyse" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.daily_analyse" />
+        <item index="1" class="java.lang.String" itemvalue="Python.database_operater" />
+        <item index="2" class="java.lang.String" itemvalue="Python.test (1)" />
+        <item index="3" class="java.lang.String" itemvalue="Python.test" />
+        <item index="4" class="java.lang.String" itemvalue="Python.toolbox" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6966640a-0d02-41f0-8fc2-c8919bc47490" name="Default" comment="" />
+      <created>1583029534780</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583029534780</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34570518" sideWeight="0.25208333" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34570518" sideWeight="0.74791664" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32661718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14270833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29645094" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="926" y="272" width="633" height="632" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36509636" sideWeight="0.6889353" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.07239583" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="0" y="0" width="434" height="856" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.059384942" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="24" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/templates/admin/reports_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="113" column="46" lean-forward="true" selection-start-line="113" selection-start-column="8" selection-end-line="113" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin/all_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="32" column="25" lean-forward="true" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/fonts/menu-iconfont/demo.css" />
+    <entry file="file://$PROJECT_DIR$/static/css/menu-iconfont.css" />
+    <entry file="file://$PROJECT_DIR$/static/css/menu-iconfont/demo.css" />
+    <entry file="file://$PROJECT_DIR$/static/css/menu-iconfont/iconfont.css" />
+    <entry file="file://$PROJECT_DIR$/static/css/iconfont/iconfont.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin/helps_and_reports_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6042">
+          <caret line="318" column="46" lean-forward="false" selection-start-line="318" selection-start-column="22" selection-end-line="318" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin/track_search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="65" column="48" lean-forward="false" selection-start-line="65" selection-start-column="45" selection-end-line="65" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin/admin_home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/jquery.datetimepicker.min.css" />
+    <entry file="file://$PROJECT_DIR$/static/js/jquery.datetimepicker.min.js" />
+    <entry file="file://$PROJECT_DIR$/static/js/jquery.datetimepicker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3192">
+          <caret line="24" column="8" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/jquery.datetimepicker.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="30" lean-forward="false" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin/base_url.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="162" column="35" lean-forward="true" selection-start-line="162" selection-start-column="35" selection-end-line="162" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="2842" column="19" lean-forward="false" selection-start-line="2842" selection-start-column="19" selection-end-line="2842" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin/personal_page_old.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/my_bmap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3496">
+          <caret line="184" column="53" lean-forward="false" selection-start-line="184" selection-start-column="53" selection-end-line="184" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/add_track.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2812">
+          <caret line="148" column="48" lean-forward="false" selection-start-line="148" selection-start-column="48" selection-end-line="148" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/tensorflow/Lib/pathlib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35">
+          <caret line="523" column="0" lean-forward="false" selection-start-line="523" selection-start-column="0" selection-end-line="523" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/tensorflow/Lib/site-packages/django/core/servers/basehttp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="192" column="0" lean-forward="false" selection-start-line="192" selection-start-column="0" selection-end-line="192" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/tensorflow/Lib/site-packages/django/core/handlers/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="112" column="0" lean-forward="false" selection-start-line="112" selection-start-column="0" selection-end-line="112" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ec56e2ce-9c09-433d-b852-e2aa7c7c6512/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CloseContactManager/Tools/database_config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons/multiprocessing/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CloseContactManager/lib/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CloseContactManager/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1564">
+          <caret line="15" column="8" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CloseContactManager/sdk.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/envs/tensorflow/Lib/inspect.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2565">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CloseContactManager/lib/valid.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2701">
+          <caret line="54" column="51" lean-forward="false" selection-start-line="54" selection-start-column="51" selection-end-line="54" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CloseContactManager/lib/ChannelException.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CloseContactManager/lib/RequestCore.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="36" column="8" lean-forward="false" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CloseContactManager/Tools/push_message_channel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10067">
+          <caret line="562" column="41" lean-forward="true" selection-start-line="562" selection-start-column="41" selection-end-line="562" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CloseContactManager/Tools/database_operater.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="522" column="54" lean-forward="false" selection-start-line="522" selection-start-column="54" selection-end-line="522" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#15#0" expanded="false" />
+            <marker date="1587909430433" expanded="true" signature="590:644" ph="SELECT * FRO... admin" />
+            <marker date="1587909430433" expanded="true" signature="590:666" ph="SELECT `vill... admin" />
+            <marker date="1587909430433" expanded="true" signature="743:798" ph="SELECT `vill... admin" />
+            <marker date="1587909430433" expanded="true" signature="1220:1296" ph="INSERT INTO `admin`... " />
+            <marker date="1587909430433" expanded="true" signature="2813:2926" ph="SELECT `id_n... users_info" />
+            <marker date="1587909430433" expanded="true" signature="2813:2942" ph="SELECT `id_n... users_info" />
+            <marker date="1587909430433" expanded="true" signature="2813:2958" ph="SELECT `id_n... users_info" />
+            <marker date="1587909430433" expanded="true" signature="2813:2959" ph="SELECT `id_n... users_info" />
+            <marker date="1587909430433" expanded="true" signature="3870:4055" ph="SELECT `id_n... users_info" />
+            <marker date="1587909430433" expanded="true" signature="5064:5311" ph="SELECT `id_n... users_info" />
+            <marker date="1587909430433" expanded="true" signature="6156:6422" ph="SELECT `id_n... users_info" />
+            <marker date="1587909430433" expanded="true" signature="7256:7343" ph="SELECT * FRO... users_info_old" />
+            <marker date="1587909430433" expanded="true" signature="8091:8118" ph="SELECT * FRO... total_track" />
+            <marker date="1587909430433" expanded="true" signature="8608:8886" ph="SELECT `id_n... users_info" />
+            <marker date="1587909430433" expanded="true" signature="9705:10018" ph="SELECT `id_n... users_info" />
+            <marker date="1587909430433" expanded="true" signature="10849:10959" ph="SELECT `name... users_info" />
+            <marker date="1587909430433" expanded="true" signature="11034:11088" ph="SELECT `trac... users_track" />
+            <marker date="1587909430433" expanded="true" signature="12212:12261" ph="SELECT `name... users" />
+            <marker date="1587909430433" expanded="true" signature="12421:12495" ph="INSERT INTO `users`... " />
+            <marker date="1587909430433" expanded="true" signature="13037:13091" ph="SELECT `name... users_info" />
+            <marker date="1587909430433" expanded="true" signature="13251:13478" ph="INSERT INTO `users_info`... " />
+            <marker date="1587909430433" expanded="true" signature="13720:13774" ph="INSERT INTO `users_track`... " />
+            <marker date="1587909430433" expanded="true" signature="13720:13851" ph="INSERT INTO `users_track`... " />
+            <marker date="1587909430433" expanded="true" signature="14623:14704" ph="SELECT `vill... users_info" />
+            <marker date="1587909430433" expanded="true" signature="14839:14928" ph="UPDATE `users_info`... " />
+            <marker date="1587909430433" expanded="true" signature="15484:15573" ph="UPDATE `users_track`... " />
+            <marker date="1587909430433" expanded="true" signature="18063:18133" ph="SELECT `vill... users_info" />
+            <marker date="1587909430433" expanded="true" signature="18245:18321" ph="UPDATE `users_info`... " />
+            <marker date="1587909430433" expanded="true" signature="18587:18664" ph="UPDATE `users_track`... " />
+            <marker date="1587909430433" expanded="true" signature="19223:19306" ph="SELECT `vill... users_info" />
+            <marker date="1587909430433" expanded="true" signature="19439:19479" ph="DELETE FROM `users`... " />
+            <marker date="1587909430433" expanded="true" signature="19548:19593" ph="DELETE FROM `users_info_old`... " />
+            <marker date="1587909430433" expanded="true" signature="19663:19709" ph="DELETE FROM `users_track`... " />
+            <marker date="1587909430433" expanded="true" signature="20454:20565" ph="SELECT COUNT... users_info_old" />
+            <marker date="1587909430433" expanded="true" signature="21616:21781" ph="SELECT `id`,... help_and_report" />
+            <marker date="1587909430433" expanded="true" signature="23380:23650" ph="SELECT `id`,... help_and_report" />
+            <marker date="1587909430433" expanded="true" signature="25455:25621" ph="SELECT `id`,... help_and_report" />
+            <marker date="1587909430433" expanded="true" signature="25689:25959" ph="SELECT `id`,... help_and_report" />
+            <marker date="1587909430433" expanded="true" signature="27598:27848" ph="SELECT `id`,... help_and_report" />
+            <marker date="1587909430433" expanded="true" signature="29538:29812" ph="SELECT `id`,... help_and_report" />
+            <marker date="1587909430433" expanded="true" signature="31503:31567" ph="SELECT `info... help_and_report" />
+            <marker date="1587909430433" expanded="true" signature="32101:32426" ph="INSERT INTO `help_and_report`... " />
+            <marker date="1587909430433" expanded="true" signature="33660:33730" ph="SELECT `vill... help_and_report" />
+            <marker date="1587909430433" expanded="true" signature="33823:33902" ph="UPDATE `help_and_report`... " />
+            <marker date="1587909430433" expanded="true" signature="33863:33902" ph="UPDATE `help_and_report`... " />
+            <marker date="1587909430433" expanded="true" signature="34669:34698" ph="SELECT * FRO... disease_level" />
+            <marker date="1587909430433" expanded="true" signature="35042:35087" ph="UPDATE `disease_level`... " />
+            <marker date="1587909430433" expanded="true" signature="35444:35477" ph="SELECT `trac... total_track" />
+            <marker date="1587909430433" expanded="true" signature="35641:35676" ph="UPDATE `total_track`... " />
+            <marker date="1587909430433" expanded="true" signature="36194:36227" ph="SELECT `trac... total_track" />
+            <marker date="1587909430433" expanded="true" signature="36383:36418" ph="UPDATE `total_track`... " />
+            <marker date="1587909430433" expanded="true" signature="36955:37317" ph="SELECT `stat... statistic" />
+            <marker date="1587909430433" expanded="true" signature="37385:37739" ph="SELECT `stat... statistic" />
+            <marker date="1587909430433" expanded="true" signature="43534:43853" ph="UPDATE `statistic`... " />
+            <marker date="1587909430433" expanded="true" signature="43873:43896" ph="DELETE FROM `statistic`... " />
+            <marker date="1587909430433" expanded="true" signature="44588:44869" ph="SELECT `inde... statistic" />
+            <marker date="1587909430433" expanded="true" signature="44890:45262" ph="INSERT INTO `statistic`... " />
+            <marker date="1587909430433" expanded="true" signature="45283:45649" ph="UPDATE `statistic`... " />
+            <marker date="1587909430433" expanded="true" signature="47828:47904" ph="SELECT `prov... administrative_division" />
+            <marker date="1587909430433" expanded="true" signature="47963:48048" ph="SELECT `prov... administrative_division" />
+            <marker date="1587909430433" expanded="true" signature="48107:48212" ph="SELECT `prov... administrative_division" />
+            <marker date="1587909430433" expanded="true" signature="48271:48388" ph="SELECT `prov... administrative_division" />
+            <marker date="1587909430433" expanded="true" signature="48448:48581" ph="SELECT `prov... administrative_division" />
+            <marker date="1587909430433" expanded="true" signature="49405:49479" ph="SELECT `vill... administrative_division" />
+            <marker date="1587909430433" expanded="true" signature="49543:49632" ph="SELECT `stre... administrative_division" />
+            <marker date="1587909430433" expanded="true" signature="49696:49800" ph="SELECT `dist... administrative_division" />
+            <marker date="1587909430433" expanded="true" signature="49864:49981" ph="SELECT `city... administrative_division" />
+            <marker date="1587909430433" expanded="true" signature="50697:50736" ph="SELECT * FRO... administrative_division" />
+            <marker date="1587909430433" expanded="true" signature="53158:53227" ph="SELECT `prov... administrative_division" />
+            <marker date="1587909430433" expanded="true" signature="53292:53399" ph="SELECT `city... administrative_division" />
+            <marker date="1587909430433" expanded="true" signature="53488:53599" ph="SELECT `dist... administrative_division" />
+            <marker date="1587909430433" expanded="true" signature="53688:53799" ph="SELECT `stre... administrative_division" />
+            <marker date="1587909430433" expanded="true" signature="53888:53999" ph="SELECT `vill... administrative_division" />
+            <marker date="1587909430433" expanded="true" signature="54089:54187" ph="SELECT `vill... administrative_division" />
+            <marker date="1587909430433" expanded="true" signature="55199:55338" ph="SELECT `city... administrative_division" />
+            <marker date="1587909430433" expanded="true" signature="55397:55538" ph="SELECT `stre... administrative_division" />
+            <marker date="1587909430433" expanded="true" signature="57071:57147" ph="SELECT `prov... administrative_division" />
+            <marker date="1587909430433" expanded="true" signature="57198:57266" ph="SELECT `city... administrative_division" />
+            <marker date="1587909430433" expanded="true" signature="57317:57393" ph="SELECT `dist... administrative_division" />
+            <marker date="1587909430433" expanded="true" signature="57444:57516" ph="SELECT `stre... administrative_division" />
+            <marker date="1587909430433" expanded="true" signature="57568:57642" ph="SELECT `vill... administrative_division" />
+            <marker date="1587909430433" expanded="true" signature="58248:58298" ph="SELECT `prov... administrative_provinces" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CloseContactManager/Tools/toolbox.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2394">
+          <caret line="129" column="34" lean-forward="false" selection-start-line="129" selection-start-column="34" selection-end-line="129" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#15#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CloseContactManager/Tools/daily_analyse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="21" column="19" lean-forward="false" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#15#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CloseContactManager/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="42" column="36" lean-forward="false" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin/personal_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2964">
+          <caret line="156" column="55" lean-forward="false" selection-start-line="156" selection-start-column="4" selection-end-line="156" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin/personal_page_add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="303" column="43" lean-forward="false" selection-start-line="303" selection-start-column="43" selection-end-line="303" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="7639" column="28" lean-forward="true" selection-start-line="7639" selection-start-column="28" selection-end-line="7639" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/admin-page.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8949">
+          <caret line="471" column="22" lean-forward="false" selection-start-line="471" selection-start-column="22" selection-end-line="471" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2337">
+          <caret line="123" column="15" lean-forward="false" selection-start-line="123" selection-start-column="15" selection-end-line="123" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1843">
+          <caret line="97" column="5" lean-forward="false" selection-start-line="87" selection-start-column="4" selection-end-line="97" selection-end-column="5" />
+          <folding>
+            <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#2545#2551#0#HTML" expanded="true" />
+            <element signature="e#2551#2557#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1938">
+          <caret line="102" column="5" lean-forward="false" selection-start-line="102" selection-start-column="5" selection-end-line="102" selection-end-column="5" />
+          <folding>
+            <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#2994#3000#0#HTML" expanded="true" />
+            <element signature="e#3000#3006#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CloseContactManager/view.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="616" column="33" lean-forward="true" selection-start-line="616" selection-start-column="33" selection-end-line="616" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/vmap.sampledata.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/init_date.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="88" column="1" lean-forward="true" selection-start-line="88" selection-start-column="1" selection-end-line="88" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/myECharts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin/close_contacts_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="47" column="21" lean-forward="true" selection-start-line="47" selection-start-column="21" selection-end-line="47" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

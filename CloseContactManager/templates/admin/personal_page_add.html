@@ -1,0 +1,506 @@
+{% extends 'admin/base_url.html' %}
+{% load static %}
+{# 页面内容 #}
+{% block content %}
+    <!-- Orders -->
+    <div id="blur-orgin" class="orders">
+        <form class="add_user" name="add_user" action="/admin/add_user/" method="post"
+              onsubmit="return checkAllDataCompleteness()">
+            {% csrf_token %}
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="card br-0">
+                        <div class="card-body">
+
+                            <h4 class="box-title inline-block">添加确诊&疑似病例</h4>
+                            <div class="pull-right">
+                                <div id="message-box" class="inline-block">
+                                    {% if message %}
+                                        {% ifequal message_type 1 %}
+                                            <h4 class="box-title inline-block fg-color-4">{{ message }}</h4>
+                                        {% endifequal %}
+                                        {% ifequal message_type 0 %}
+                                            <h4 class="box-title inline-block fg-color-0">{{ message }}</h4>
+                                        {% endifequal %}
+                                    {% endif %}
+                                </div>
+                                <button class="btn btn-success btn-sm" type="submit">确认添加用户</button>
+                            </div>
+
+                        </div>
+                        <div class="card-body-- border-top-10">
+                            <div class="row">
+                                <div class="col-md-3 input-left-part">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <div class="row">
+                                                <div class="col-md-4 form-label">
+                                                    <i class="fa fa-user fa-fw"></i> 姓名
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <input class="form-control form-control-sm" type="text" name="name"
+                                                           title="用户姓名" id="name"
+                                                           onblur="checkDataCompleteness(this.id)"
+                                                           placeholder="请输入姓名">
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="row">
+                                                <div class="col-md-4 form-label">
+                                                    <i class="fa fa-venus-mars fa-fw"></i> 性别
+                                                </div>
+                                                <div class="col-md-8 gender-radio">
+                                                    <select class="form-control form-control-sm" name="gender"
+                                                            id="gender"
+                                                            title="用户性别" onblur="checkDataCompleteness(this.id)">
+                                                        <option value="" disabled selected hidden>请选择用户性别</option>
+                                                        <option value="男">男</option>
+                                                        <option value="女">女</option>
+                                                    </select>
+                                                </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="row">
+                                                <div class="col-md-4 form-label">
+                                                    <i class="fa fa-id-card-o fa-fw"></i> 身份证号
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <input class="form-control form-control-sm" type="text"
+                                                           name="id_number" id="id_number"
+                                                           title="身份证号" onblur="checkDataCompleteness(this.id)"
+                                                           placeholder="请输入身份证号">
+                                                </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="row">
+                                                <div class="col-md-4 form-label">
+                                                    <i class="fa fa-phone fa-fw"></i> 联系方式
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <input class="form-control form-control-sm" type="text"
+                                                           name="phone_number" id="phone_number"
+                                                           title="联系方式" onblur="checkDataCompleteness(this.id)"
+                                                           placeholder="请输入电话号码">
+                                                </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="row">
+                                                <div class="col-md-4 form-label">
+                                                    <i class="fa fa-user-md fa-fw"></i> 用户状态
+                                                </div>
+                                                <div class="col-md-8">
+                                                    <select class="form-control form-control-sm" name="status"
+                                                            id="status" onblur="checkDataCompleteness(this.id)"
+                                                            title="用户状态">
+                                                        <option value="" disabled selected hidden>请选择用户状态</option>
+                                                        {# <option value="0">健康</option>#}
+                                                        {# <option value="1">密切接触者-低风险</option>#}
+                                                        {# <option value="2">密切接触者-中风险</option>#}
+                                                        {# <option value="3">密切接触者-高风险</option>#}
+                                                        <option value="4">疑似病例</option>
+                                                        <option value="5">确诊病例</option>
+                                                        <option value="6">无症状感染者</option>
+                                                    </select>
+                                                </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-9 input-right-part">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+
+                                            <div class="row">
+                                                <div class="col-md-2 form-label">
+                                                    <i class="fa fa-id-badge fa-fw"></i> 行政区划
+                                                </div>
+                                                <div class="col-md-10">
+                                                    <div class="row no-margin no-padding child-padding-5">
+                                                        <div id="province-list" class="col-md-2 select-box">
+                                                            <select class="form-control form-control-sm" name="province"
+                                                                    id="province"
+                                                                    title="省份"
+                                                                    onchange="get_administrative_tree(this.options[this.options.selectedIndex].value)">
+                                                                <option value="" disabled selected hidden>省级行政区</option>
+                                                                {% for province in provinces %}
+                                                                    <option value="{{ province.code|safe }}"
+                                                                    >{{ province.name|safe }}</option>
+                                                                {% endfor %}
+                                                            </select>
+                                                        </div>
+                                                        <div id="city-list" class="col-md-2 select-box"></div>
+                                                        <div id="district-list" class="col-md-2 select-box"></div>
+                                                        <div id="street-list" class="col-md-3 select-box"></div>
+                                                        <div id="village-list" class="col-md-3 select-box"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <div class="row">
+                                                <div class="col-md-2 form-label">
+                                                    <i class="fa fa-map-marker fa-fw"></i> 住址
+                                                </div>
+                                                <div class="col-md-10">
+                                                    {#                                                    <input class="form-control form-control-sm" type="text" name="address" title="address"#}
+                                                    {#                                                           placeholder="请输入住址">#}
+                                                    <textarea class="ta-address form-control form-control-sm"
+                                                              name="address" title="address" id="address"
+                                                              onblur="checkDataCompleteness(this.id)"
+                                                              placeholder="请输入住址"></textarea>
+                                                </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="color-justify2" class="card">
+                                <div class="card-header">
+                                    <h4 class="inline-block form-label"><i class="iconfont icon-guiji fa-fw"></i> 轨迹
+                                    </h4>
+
+                                    <a href="javascript:void(0)"
+                                       class="btn btn-success btn-sm inline-block pull-right"
+                                       onclick="showAddTrackBlock(true)">添加轨迹
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row card-group" id="track-list-panel">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <h4 class="inline-block color-gray"><i class="fa fa-info-circle fa-fw"></i>
+                                        暂无轨迹信息</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="hidden" name="track" id="track-info">
+                </div><!-- /.card -->
+
+            </div> <!-- /.col-md-4 -->
+        </form>
+    </div>
+    <!-- /.orders -->
+    <div id="blur-cover" class="elastic-layer hidden-panel">
+        <div class="add-track-panel card col-xl-8 col-md-10 col-sm-12">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card track-card">
+                        <div class="card-header">
+                            <strong class="card-title mb-3">添加轨迹</strong>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4 input-left-part">
+                                    <div class="row add-track-option">
+                                        <div class="col-md-1 margin-left-20">
+                                            <i class="fa fa-search fa-fw"></i></div>
+                                        <div class="col-md-11">
+                                            <input class="form-control form-control-sm" type="text" id="search-keyword"
+                                                   placeholder="请输入搜索关键字"></div>
+                                    </div>
+                                    <div class="row add-track-option">
+                                        <div class="col-md-1 margin-left-20">
+                                            <i class="fa fa-calendar fa-fw"></i></div>
+                                        <div class="col-md-11">
+                                            <input class="form-control form-control-sm" id="date-picker" type="text"
+                                                   name="date"
+                                                   placeholder="请输入日期">
+                                        </div>
+                                    </div>
+                                    <div class="row add-track-option">
+                                        <div class="col-md-1 margin-left-20">
+                                            <i class="fa fa-clock-o fa-fw"></i></div>
+                                        <div class="col-md-5">
+                                            <input class="form-control form-control-sm" id="starttime-picker"
+                                                   name="starttime"
+                                                   type="text"
+                                                   placeholder="请输入开始时间">
+                                        </div>
+                                        <div class="col-md-1 text-center">-</div>
+                                        <div class="col-md-5">
+                                            <input class="form-control form-control-sm" id="endtime-picker" type="text"
+                                                   name="endtime"
+                                                   placeholder="请输入结束时间">
+                                        </div>
+                                    </div>
+                                    <div id="search-result"></div>
+                                    <div class="row">
+                                        <input class="form-control form-control-sm" id="name-hidden" name="name"
+                                               type="hidden">
+                                        <input class="form-control form-control-sm" id="long-hidden" name="long"
+                                               type="hidden">
+                                        <input class="form-control form-control-sm" id="lat-hidden" name="lat"
+                                               type="hidden">
+                                    </div>
+                                    <div class="row">
+                                        <input class="form-control form-control-sm" id="date-index-hidden"
+                                               name="date-index" type="hidden">
+                                        <input class="form-control form-control-sm" id="poi-index-hidden"
+                                               name="poi-index" type="hidden">
+                                    </div>
+                                    <div class="row">
+                                        <button class="btn" id="center-refresh" style="display: none;">刷新中心点</button>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div id="search-map"></div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="card-body">
+                                <div class="button-group pull-right">
+                                    <button type="button" class="btn btn-secondary btn-sm"
+                                            onclick="showAddTrackBlock(false)"><i class="fa fa-times-circle"></i>&nbsp;
+                                        取消添加
+                                    </button>
+                                    <button type="button" class="btn btn-success btn-sm" id="modify_track_button"
+                                            onclick="modifyTrack('track-list-panel',$('#date-index-hidden').val(),$('#poi-index-hidden').val())">
+                                        <i class="fa fa-check-circle"></i>
+                                        确认修改
+                                    </button>
+                                    <button type="button" class="btn btn-success btn-sm" id="add_track_button"
+                                            onclick="addNewTrack('track-list-panel')">
+                                        <i class="fa fa-check-circle"></i>
+                                        确认添加
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-match-height@0.7.2/dist/jquery.matchHeight.min.js"></script>
+    <script type="text/javascript"
+            src="http://api.map.baidu.com/api?v=3.0&ak=AKHmn6YRTT2htqCbyxuzunHfTszmrSdu"></script>
+    <script type="text/javascript" src="{% static 'js/jquery.datetimepicker.js' %}"></script>
+    <script src="{% static '/js/main.js' %}"></script>
+    <script src="{% static 'js/echarts.min.js' %}"></script>
+    <script src="{% static 'js/myECharts.js' %}"></script>
+    <script src="{% static 'js/init_date.js' %}"></script>
+    <script src="{% static 'js/my_bmap.js' %}"></script>
+    <script src="{% static 'js/add_track.js' %}"></script>
+    <script>
+
+        var $ = window.jQuery;
+        // apply matchHeight to each item container's items
+        $('.equal-height-container').each(function () {
+            $(this).children('.col-md-4').children('.card').matchHeight(true);
+        });
+
+        setTimeout(function () {
+            $("#message-box").fadeOut(1000)
+        }, 2000);
+        $("#user-add").addClass("active");
+
+        var xmlhttp;
+        if (window.XMLHttpRequest) {
+            //  IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
+            xmlhttp = new XMLHttpRequest();
+        }
+        else {
+            // IE6, IE5 浏览器执行代码
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function () {
+            if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
+                var response = eval('(' + xmlhttp.responseText + ')');
+                var level = response.data.level;
+                var level1_innerHtml = "";
+                if (level === 0) {
+                    level1_innerHtml += "<select class=\"form-control form-control-sm\" name=\"city_select\" id=\"city_select\" title=\"选择市、盟\" onchange=\"generate_level2_select(this.options.selectedIndex-1)\">";
+                    level1_innerHtml += "<option value=\"\" disabled selected hidden>市、盟</option>";
+                } else {
+                    level1_innerHtml += "<select class=\"form-control form-control-sm\" name=\"street_select\" id=\"street_select\" title=\"选择乡镇街道\" onchange=\"generate_level2_select(this.options.selectedIndex-1)\">";
+                    level1_innerHtml += "<option value=\"\" disabled selected hidden>乡镇街道</option>";
+                }
+                for (var level1 of response.data.tree) {
+                    level1_innerHtml += "<option value=\"" + level1.code + "\">" + level1.name + "</option>";
+                }
+                level1_innerHtml += "</select>";
+                var level2_innerHtml = "<select class=\"form-control form-control-sm\" title=\"level2_select\"><option value=\"\"> </option></select>";
+                if (level === 0) {
+                    document.getElementById("city-list").innerHTML = level1_innerHtml;
+                    document.getElementById("district-list").innerHTML = level2_innerHtml;
+                } else {
+                    document.getElementById("street-list").innerHTML = level1_innerHtml;
+                    document.getElementById("village-list").innerHTML = level2_innerHtml;
+                }
+            }
+        };
+
+        {# 添加行政编码 #}
+        //获取行政编码列表
+        function get_administrative_tree(code) {
+            innerHtml = "<i class=\"fa fa-spinner fa-pulse\"></i>";
+            if (code.length === 2) {
+                document.getElementById("city-list").innerHTML = innerHtml;
+                document.getElementById("district-list").innerHTML = "";
+            } else {
+                document.getElementById("street-list").innerHTML = innerHtml;
+                document.getElementById("village-list").innerHTML = "";
+            }
+            xmlhttp.open("GET", "/admin/get_administrative_tree?code=" + code, true);
+            xmlhttp.send();
+        }
+
+        //生成二级行政编码
+        function generate_level2_select(index) {
+            var response = eval('(' + xmlhttp.responseText + ')');
+            var level = response.data.level;
+            var level2_innerHtml = "";
+            if (level === 0) {
+                level2_innerHtml += "<select class=\"form-control form-control-sm\" name=\"district_select\" id=\"district_select\" title=\"选择区县\" onchange=\"get_administrative_tree(this.options[this.options.selectedIndex].value)\">";
+                level2_innerHtml += "<option value=\"\" disabled selected hidden>区、县</option>";
+            } else {
+                level2_innerHtml += "<select class=\"form-control form-control-sm\" name=\"village_code\" id=\"village-select\" title=\"选择村、居委会\" onblur=\"checkDataCompleteness(\"village-select\")\">";
+                level2_innerHtml += "<option value=\"\" disabled selected hidden>村、居委会</option>";
+            }
+            for (var level2 of response.data.tree[index].children) {
+                level2_innerHtml += "<option value=\"" + level2.code + "\">" + level2.name + "</option>";
+            }
+            level2_innerHtml += "</select>";
+            if (level === 0) {
+                document.getElementById("district-list").innerHTML = level2_innerHtml;
+            } else {
+                document.getElementById("village-list").innerHTML = level2_innerHtml;
+            }
+        }
+
+
+        {# 添加轨迹 #}
+        {#function addNewTrack(){#}
+        {#    var panel_id = ""#}
+        {# }#}
+
+        {# 百度地图模块 #}
+        draw_map_for_search("search-map", "search-keyword", "name-hidden", "long-hidden", "lat-hidden", "center-refresh");
+
+
+        //设置日期时间选择器
+        var startTime;
+        var endTime;
+        var startDateTimeId = "#starttime-picker";
+        var endDateTimeId = "#endtime-picker";
+        var dateId = '#date-picker';
+        $(dateId).datetimepicker({
+            format: 'Y-m-d',
+            timepicker: false,
+            maxDate: 0
+        });
+        $(startDateTimeId).datetimepicker({
+            format: 'H:i',
+            datepicker: false,
+            step: 15,
+            onChangeDateTime: function (dp, $input) {
+                startTime = $(startDateTimeId).val();
+            },
+            onClose: function (current_time, $input) {
+                if (startTime > endTime) {
+                    $(startDateTimeId).val(endTime);
+                    startTime = endTime;
+                    alert("开始时间不能晚于结束时间！");
+                }
+            }
+        });
+        $(endDateTimeId).datetimepicker({
+            format: 'H:i',
+            datepicker: false,
+            step: 15,
+            onClose: function (current_time, $input) {
+                endTime = $(endDateTimeId).val();
+                if (startTime > endTime) {
+                    $(endDateTimeId).val(startTime);
+                    endTime = startTime;
+                    alert("结束时间不能早于开始时间！");
+                }
+            }
+        });
+
+        function checkDataCompleteness(item_id) {
+            var value = G(item_id).value;
+            var this_item = $('#' + item_id);
+            var idNumberReg = /(^[1-9]\d{5}(18|19|([23]\d))\d{2}((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\d{3}[0-9Xx]$)|(^[1-9]\d{5}\d{2}((0[1-9])|(10|11|12))(([0-2][1-9])|10|20|30|31)\d{2}[0-9Xx]$)/
+            var phoneNumberReg = /^1[3456789]\d{9}$/;
+            if (value === "") {
+                this_item.removeClass("is-valid");
+                this_item.addClass("is-invalid");
+            } else {
+                this_item.removeClass("is-invalid");
+                this_item.addClass("is-valid");
+            }
+            if (item_id == "id_number") {
+                if (!idNumberReg.test(value)) {
+                    this_item.removeClass("is-valid");
+                    this_item.addClass("is-invalid");
+                }
+            }
+            if (item_id == "phone_number") {
+                if (!phoneNumberReg.test(value)) {
+                    this_item.removeClass("is-valid");
+                    this_item.addClass("is-invalid");
+                }
+            }
+        }
+
+        function checkAllDataCompleteness() {
+            var name = G("name").value;
+            var gender = G("gender").value;
+            var id_number = G("name").value;
+            var phone_number = G("phone_number").value;
+            var status = G("status").value;
+            var village_code = '';
+            if (G("village-select") != null) {
+                village_code = G("village-select").value;
+            }
+            var address = G("address").value;
+            var track = G("track-info").value;
+            var message = '';
+            if (name == '') {
+                message += "姓名 ";
+            }
+            if (gender == '') {
+                message += "性别 ";
+            }
+            if (id_number == '') {
+                message += "身份证号 ";
+            }
+            if (phone_number == '') {
+                message += "联系方式 ";
+            }
+            if (status == '') {
+                message += "用户状态 ";
+            }
+            if (village_code == '') {
+                message += "行政区划 ";
+            }
+            if (address == '') {
+                message += "住址 ";
+            }
+            if (track == '') {
+                message += "轨迹 ";
+            }
+            if (message != '') {
+                message += "信息缺失，请补充完整";
+                alert(message);
+                return false;
+            } else {
+                return true;
+            }
+
+        }
+
+    </script>
+{% endblock %}

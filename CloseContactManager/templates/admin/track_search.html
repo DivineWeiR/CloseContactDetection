@@ -1,0 +1,102 @@
+{% extends 'admin/base_url.html' %}
+{% load static %}
+{# 页面内容 #}
+{% block content %}
+    <div id="allmap" class="CompanySearch-l-input fl">
+        <input type="text" id="txtAddress" placeholder="请输入搜索关键字">
+    </div>
+    <div class="fl CompanySearch-l-btn">
+        <button id="search_btn">搜索</button>
+    </div>
+
+
+    <div class="CompanySearch-l-list">
+        <ul id="AS"></ul>
+    </div>
+
+
+    <div class="CompanySearch-r fr" id="container"></div>
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript"
+            src="http://api.map.baidu.com/api?v=3.0&ak=AKHmn6YRTT2htqCbyxuzunHfTszmrSdu"></script>
+
+    <script>
+
+        var $ = window.jQuery;
+        $(function () {
+            initMap();              //创建和初始化地图
+            createSearch();         //创建搜索
+            createAutocomlete();    //自动搜索(实时)
+
+            //搜索按钮click点击方法，根据搜索输入框的值进行地图搜索
+            $("#search_btn").click(function () {
+                searchPlace($("#txtAddress").val());
+            });
+        });
+
+
+        function initMap() {
+            createMap();    //创建地图
+            setMapEvent();  //设置地图事件，比如鼠标滚动缩小等
+        }
+
+        //创建地图函数：
+        function createMap() {
+            //百度地图API功能
+            var map = new BMap.Map("container");    //创建Map实例 ， 对应地图容器id
+            map.centerAndZoom(new BMap.Point(113.02, 28.23), 12);  //初始化地图,设置中心点坐标和地图级别
+            map.setCurrentCity("长沙");           //设置地图显示的城市 此项是必须设置的
+            map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩
+            window.map = map;                    //将map变量存储在全局
+        }
+
+        //地图事件设置函数：
+        function setMapEvent() {
+            map.enableDragging();          //启用地图拖拽事件，默认启用(可不写)
+            map.enableScrollWheelZoom();   //启用地图滚轮放大缩小
+            map.enableDoubleClickZoom();   //启用鼠标双击放大，默认启用(可不写)
+            map.enableKeyboard();          //启用键盘上下左右键移动地图
+        }
+
+
+        function createSearch() {
+            var map = window.map;
+            var local = new BMap.LocalSearch(map,
+                {
+                    renderOptions: {map: map, panel: "CompanySearch-l-list"}
+                });
+            window.local = local;
+        }
+
+
+        function createAutocomlete() {
+            var map = window.map;
+            var ac = new BMap.Autocomplete(    //建立一个自动完成的对象
+                {
+                    "input": "txtAddress",
+                    "location": map
+                });
+            ac.addEventListener("onconfirm", function (e) {    //鼠标点击下拉列表后的事件
+                var _value = e.item.value;
+                var addr = _value.business + _value.province + _value.city + _value.district + _value.street + _value.streetNumber;
+                searchPlace(addr);
+            });
+        }
+
+
+        function searchPlace(value) {
+            window.local.search(value);
+        }
+
+
+        //点击公司名称/地址，将值传递给搜索的输入框 ，该功能是结合我项目的需求做的（具体需求：点击下面的公司名称或其地址，自动将其值回写在搜索框内），根据需要可加可不加
+        function tranAddr(obj) {
+            //获取p标签值
+            var p_text = $(obj).attr("value");
+            //将获取到的值赋给搜索框
+            document.getElementById("txtAddress").value = p_text;
+        }
+    </script>
+{% endblock %}
