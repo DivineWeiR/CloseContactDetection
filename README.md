@@ -1,5 +1,5 @@
 # CloseContactDetection
-This is an android application for COVID-19 close contacts detection
+This is an android system for COVID-19 close contacts detection
 
 
 CloseContactManager is an administrator platform based on Django projects.
