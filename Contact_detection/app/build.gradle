@@ -1,0 +1,65 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        //正式版本签名信息
+        release {
+            storeFile file('C:\\Users\\weira\\.android\\contact_detection.jks')
+            storePassword 'bwt970427'
+            keyAlias = 'contact_detection_key'
+            keyPassword 'bwt970427'
+        }
+        //debug版本签名信息
+        debug {
+            storeFile file('C:\\Users\\weira\\.android\\debug.keystore')
+            storePassword 'android'
+        }
+    }
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+//    compileSdkVersion 29
+    defaultConfig {
+        applicationId "com.seucpss.contact_detection"
+        minSdkVersion 21
+//        targetSdkVersion 29
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+     testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDir 'libs'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.google.code.gson:gson:2.8.5'
+
+
+
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'com.google.android.material:material:1.1.0'
+    //百度地图定位
+    implementation files('libs/BaiduLBS_Android.jar')
+    implementation fileTree(include: ['*.aar', '*.jar'], exclude: [], dir: 'libs')
+    implementation 'com.github.hotchemi:permissionsdispatcher:2.2.0'
+    annotationProcessor 'com.github.hotchemi:permissionsdispatcher-processor:2.2.0'
+    implementation files('libs/pushservice-6.7.3.20.jar')
+
+
+
+}

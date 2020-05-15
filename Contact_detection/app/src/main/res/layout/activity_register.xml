@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.seucpss.contact_detection.RegisterActivity"
+    android:background="#eeeeee"
+    >
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_registeractivity_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+        <!-- 第一个文本编辑框  输入用户名 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ic_register_idcard"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0"
+                app:srcCompat="@drawable/ic_idcard" />
+
+            <TextView
+                android:id="@+id/tv_registeractivity_id_number"
+                android:layout_width="77dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="身份证号："
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/et_registeractivity_id_number"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bg_edittext"
+                android:gravity="center_vertical"
+                android:hint="请输入身份证号码"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColorHighlight="@color/colorPrimaryDark"
+                android:textColorLink="@color/colorPrimary"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textSize="14sp" />
+        </LinearLayout>
+        <!-- 第二个文本编辑框  输入密码 -->
+
+        <!-- 验证码部分 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ic_register_name"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0"
+                app:srcCompat="@drawable/ic_name" />
+
+            <TextView
+                android:id="@+id/tv_registeractivity_name"
+                android:layout_width="77dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="姓名："
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/et_registeractivity_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bg_edittext"
+                android:gravity="center_vertical"
+                android:hint="请输入真实姓名"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColorHighlight="@color/colorPrimaryDark"
+                android:textColorLink="@color/colorPrimaryDark"
+                android:textCursorDrawable="@drawable/cursor"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ic_register_gender"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0"
+                app:srcCompat="@drawable/ic_gender" />
+
+            <TextView
+                android:id="@+id/tv_registeractivity_sexual"
+                android:layout_width="77dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="性别："
+                android:textColor="@android:color/black" />
+
+            <RadioGroup
+                android:id="@+id/rg_registeractivity_sexual"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_registeractivity_sexual_male"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:button="@drawable/rb_primary"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="    男"
+                    android:textColorLink="@color/colorPrimaryDarker" />
+
+                <RadioButton
+                    android:id="@+id/rb_registeractivity_sexual_female"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:button="@drawable/rb_primary"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="    女"
+                    android:textColorLink="@color/colorPrimaryDarker" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ic_register_phone"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0"
+                app:srcCompat="@drawable/ic_telephone" />
+
+            <TextView
+                android:id="@+id/tv_registeractivity_phone_number"
+                android:layout_width="77dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="联系电话："
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/et_registeractivity_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bg_edittext"
+                android:gravity="center_vertical"
+                android:hint="请输入本人联系电话"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColorHighlight="@color/colorPrimaryDark"
+                android:textColorLink="@color/colorPrimary"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView5_register_addressCity"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0"
+                app:srcCompat="@drawable/ic_code" />
+
+
+            <TextView
+                android:id="@+id/tv_registeractivity_administrative_code"
+                android:layout_width="77dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0"
+                android:paddingLeft="5dp"
+                android:text="行政区划："
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:id="@+id/btnCheck"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="3"
+                android:background="@drawable/btn_gray"
+                android:paddingLeft="10dp"
+                android:text="选择行政区划" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="111dp"
+            android:layout_weight="0"
+            android:paddingLeft="5dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/btnCheck"
+            app:layout_constraintLeft_toRightOf="@id/btnCheck"
+            app:layout_constraintTop_toTopOf="@id/btnCheck" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView5_register_address"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0"
+                app:srcCompat="@drawable/ic_address" />
+
+            <TextView
+                android:id="@+id/tv_registeractivity_address"
+                android:layout_width="77dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="详细地址："
+                android:textColor="@android:color/black" />
+
+            <EditText
+                android:id="@+id/et_registeractivity_address"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bg_edittext"
+                android:gravity="center_vertical"
+                android:hint="请输入详细住址"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColorHighlight="@color/colorPrimaryDark"
+                android:textColorLink="@color/colorPrimary"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="0dp"
+            android:orientation="horizontal">
+            <!-- 第四个文本编辑框  输入验证码 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView5_register_address2"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0"
+                    app:srcCompat="@drawable/ic_auth_code" />
+
+                <TextView
+                    android:id="@+id/tv_registeractivity_phoneCodes"
+                    android:layout_width="77dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="验证码："
+                    android:textColor="@android:color/black" />
+
+                <EditText
+                    android:id="@+id/et_registeractivity_phoneCodes"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/bg_edittext"
+                    android:hint="请输入4位验证码"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:textColorHighlight="@color/colorPrimaryDark"
+                    android:textColorLink="@color/colorPrimary"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/iv_registeractivity_showCode"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1.5"
+                    android:clickable="true"
+                    android:onClick="onClick" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!-- 注册按钮 -->
+        <Button
+            android:id="@+id/bt_registeractivity_register"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/btn_primary"
+            android:onClick="onClick"
+            android:text="实名认证"
+            android:textColor="@android:color/black"
+            android:textSize="18dp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_registeractivity_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="实名认证即代表同意《用户协议》" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

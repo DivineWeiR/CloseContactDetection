@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <color name="colorPrimary">#008577</color>-->
+<!--    <color name="colorPrimaryDark">#00574B</color>-->
+<!--    <color name="colorAccent">#D81B60</color>-->
+    <color name="colorPrimary">#3EDC85</color>
+    <color name="colorPrimaryDark">#20B161</color>
+    <color name="colorPrimaryDarker">#075128</color>
+    <color name="colorPrimaryBlue">#2196F3</color>
+    <color name="colorPrimaryBlueDark">#007ADA</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="color_minefragment_top">#20B2AA</color>
+    <color name="white">#ffffff</color>
+    <color name="v666666">#666666</color>
+    <color name="ff5000">#ff5000</color>
+    <color name="veeeeee">#eeeeee</color>
+    <color name="v333333">#333333</color>
+</resources>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="所在地区"
+            android:textColor="@color/v333333"
+            android:textSize="14sp" />
+
+        <FrameLayout
+            android:id="@+id/flFork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:src="@mipmap/icon_black_fork" />
+
+        </FrameLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#eeeeee" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/tvProvince"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="19dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/colorPrimary" />
+
+        <View
+            android:id="@+id/bottomLineProvince"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_alignLeft="@+id/tvProvince"
+            android:layout_alignRight="@+id/tvProvince"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvCity"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="19dp"
+            android:layout_toRightOf="@+id/tvProvince"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/colorPrimary" />
+
+        <View
+            android:id="@+id/bottomLineCity"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_alignLeft="@+id/tvCity"
+            android:layout_alignRight="@+id/tvCity"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvArea"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="19dp"
+            android:layout_toRightOf="@+id/tvCity"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/colorPrimary" />
+
+        <View
+            android:id="@+id/bottomLineArea"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_alignLeft="@+id/tvArea"
+            android:layout_alignRight="@+id/tvArea"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvVillage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="19dp"
+            android:layout_toRightOf="@+id/tvArea"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/colorPrimary" />
+
+        <View
+            android:id="@+id/bottomLineVillage"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_alignLeft="@+id/tvVillage"
+            android:layout_alignRight="@+id/tvVillage"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#eeeeee" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
